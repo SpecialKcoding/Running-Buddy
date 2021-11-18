@@ -17,6 +17,7 @@ header {
   }
   
   header a {
+    flex-wrap: wrap;
     text-decoration: none;
     color: #fce138;
   }
@@ -32,18 +33,18 @@ nav {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 16px;
     width: 100%;
     background-color: rgb(209, 200, 188);
+    flex-wrap: wrap;
     display: inline;
 }
 nav ul li{
-    margin: 0 30px;
+    margin: 0 6px;
     font-weight: lighter;
     font-size: 22px;
     display: inline;
   }
-section {
-  position: relative;
-}
   footer {
+    flex-wrap: wrap;
+    align-content: space-between;
     color: rgb(32, 107, 100);
     background: #fce138;
     width: 100%;
@@ -55,9 +56,10 @@ section {
     left: -4px;
 }
   footer div {
-    float: right;
+    display: flex;
+    justify-content: space-between;
     line-height: 1.5;
-    text-align: right;
+  
   }
  div h2 {
   display: inline;
@@ -66,7 +68,23 @@ section {
   margin: 0;
 }
 section {
-  padding: 60px; 
+  padding: 5px;
+  flex-wrap: wrap;
+}
+/* Hero Style Start */
+.hero {
+  background-image: url("../assets/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+/* Hero Style End */
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  border: solid 3px #024e76;
 }
 section img {
   display: inline;
